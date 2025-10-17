@@ -359,7 +359,7 @@ function renderUserPage() {
         localStorage.removeItem('userEmail');
         localStorage.removeItem('userAvatar');
         alert('Đã đăng xuất!');
-        window.location.href = "bai2.html";
+        window.location.href = "index.html";
       };
     }
   }
@@ -495,7 +495,7 @@ class AdminUI {
   constructor() {
     const adminLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
     if (!adminLoggedIn) {
-      window.location.href = "bai2.html";
+      window.location.href = "index.html";
       return;
     }
 
@@ -549,7 +549,7 @@ class AdminUI {
         localStorage.removeItem('adminLoggedIn');
         localStorage.removeItem('adminName');
         alert('Đã đăng xuất admin!');
-        window.location.href = "bai2.html";
+        window.location.href = "index.html";
       };
     }
     this.loadProducts();
